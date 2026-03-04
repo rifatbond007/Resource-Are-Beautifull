@@ -171,12 +171,11 @@
     </div>
 
     <footer>
-      <p>7th Semester — Computer Science & Engineering</p>
+      <p>7th Semester — Computer Science & Engineering &nbsp;·&nbsp; <a href="#" id="subscribeLink">Subscribe</a> for updates</p>
     </footer>
-  </div>
 
-  <!-- Modal -->
-  <div class="modal-overlay" id="modal">
+    <!-- Course Modal -->
+    <div class="modal-overlay" id="modal">
     <div class="modal">
       <button class="modal-close" id="modalClose">&times;</button>
       <div class="modal-header">
@@ -185,6 +184,23 @@
         <span class="modal-credit" id="modalCredit"></span>
       </div>
       <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Subscribe Modal -->
+  <div class="modal-overlay" id="subscribeModal">
+    <div class="modal subscribe-modal">
+      <button class="modal-close" id="subscribeModalClose">&times;</button>
+      <div class="subscribe-modal-content">
+        <div class="subscribe-icon">📧</div>
+        <h2 class="subscribe-title">Stay Updated</h2>
+        <p class="subscribe-desc">Get notified when new resources are added. No spam, ever.</p>
+        <form class="subscribe-form" id="subscribeForm">
+          <input type="email" placeholder="Enter your email" required class="subscribe-input">
+          <button type="submit" class="subscribe-btn">Subscribe</button>
+        </form>
+        <p class="subscribe-success" id="subscribeSuccess">Thanks for subscribing!</p>
+      </div>
     </div>
   </div>
 

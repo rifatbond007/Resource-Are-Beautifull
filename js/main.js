@@ -243,3 +243,48 @@ document.addEventListener('keydown', (e) => {
     closeModal();
   }
 });
+
+// Subscribe Modal
+const subscribeLink = document.getElementById('subscribeLink');
+const subscribeModal = document.getElementById('subscribeModal');
+const subscribeModalClose = document.getElementById('subscribeModalClose');
+const subscribeForm = document.getElementById('subscribeForm');
+const subscribeSuccess = document.getElementById('subscribeSuccess');
+
+subscribeLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  subscribeModal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+});
+
+function closeSubscribeModal() {
+  subscribeModal.classList.remove('active');
+  document.body.style.overflow = '';
+  setTimeout(() => {
+    subscribeForm.reset();
+    subscribeSuccess.classList.remove('show');
+  }, 300);
+}
+
+subscribeModalClose.addEventListener('click', closeSubscribeModal);
+
+subscribeModal.addEventListener('click', (e) => {
+  if (e.target === subscribeModal) {
+    closeSubscribeModal();
+  }
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && subscribeModal.classList.contains('active')) {
+    closeSubscribeModal();
+  }
+});
+
+subscribeForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = subscribeForm.querySelector('input').value;
+  if (email) {
+    subscribeSuccess.classList.add('show');
+    setTimeout(closeSubscribeModal, 1500);
+  }
+});
