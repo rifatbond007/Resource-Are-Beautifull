@@ -10,126 +10,168 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <button class="theme-toggle" id="themeToggle">
+    <span class="theme-icon">🌙</span>
+    <span class="theme-text">Dark</span>
+  </button>
+
   <div class="container">
     <header>
-      <div class="breadcrumb">Computer Science & Engineering</div>
-      <h1>Semester 7 Study Resources</h1>
-      <p class="subtitle">Click on a course to view all learning resources.</p>
-      <div class="stats-row">
-        <div class="stat">
-          <span class="stat-value">7</span>
-          <span class="stat-label">Courses</span>
+      <div class="header-top">
+        <div class="brand">
+          <div class="breadcrumb">Computer Science & Engineering</div>
+          <h1>Semester 7 Resources</h1>
         </div>
-        <div class="stat">
-          <span class="stat-value">14</span>
-          <span class="stat-label">Credits</span>
-        </div>
-        <div class="stat">
-          <span class="stat-value">28</span>
-          <span class="stat-label">Resources</span>
+      </div>
+      <div class="header-content">
+        <p class="subtitle">A curated collection of learning materials, tutorials, and tools to help you succeed in your 7th semester courses.</p>
+        <div class="stats-row">
+          <div class="stat">
+            <span class="stat-value">7</span>
+            <span class="stat-label">Courses</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">14</span>
+            <span class="stat-label">Credits</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">28</span>
+            <span class="stat-label">Resources</span>
+          </div>
         </div>
       </div>
     </header>
 
-    <div class="section-title">Course Materials</div>
+    <div class="section-header">
+      <div class="section-title">Course Materials</div>
+      <div class="section-count">7 courses</div>
+    </div>
 
     <div class="courses-grid">
       <!-- CSE 411 -->
       <div class="course-card" data-course="cse411">
         <div class="card-header">
-          <span class="course-code">CSE 411</span>
-          <span class="course-title">Machine Learning</span>
-          <span class="credit-badge">2 Credits</span>
+          <div class="card-header-top">
+            <span class="course-code">CSE 411</span>
+            <span class="credit-badge">2 Credits</span>
+          </div>
+          <h3 class="course-title">Machine Learning</h3>
         </div>
-        <div class="card-preview">
-          <span class="preview-item">Video Courses</span>
-          <span class="preview-item">Books & Notes</span>
-          <span class="preview-item">Tips</span>
+        <div class="card-body">
+          <div class="card-preview">
+            <span class="preview-item">Video Courses</span>
+            <span class="preview-item">Books & Notes</span>
+            <span class="preview-item">Tips</span>
+          </div>
         </div>
       </div>
 
       <!-- CSE 412 -->
       <div class="course-card" data-course="cse412">
         <div class="card-header">
-          <span class="course-code">CSE 412</span>
-          <span class="course-title">Machine Learning Sessional</span>
-          <span class="credit-badge">1 Credit</span>
+          <div class="card-header-top">
+            <span class="course-code">CSE 412</span>
+            <span class="credit-badge">1 Credit</span>
+          </div>
+          <h3 class="course-title">Machine Learning Sessional</h3>
         </div>
-        <div class="card-preview">
-          <span class="preview-item">Practice & Tools</span>
-          <span class="preview-item">Tips</span>
+        <div class="card-body">
+          <div class="card-preview">
+            <span class="preview-item">Practice & Tools</span>
+            <span class="preview-item">Tips</span>
+          </div>
         </div>
       </div>
 
       <!-- CSE 415 -->
       <div class="course-card" data-course="cse415">
         <div class="card-header">
-          <span class="course-code">CSE 415</span>
-          <span class="course-title">Research Methodology</span>
-          <span class="credit-badge">2 Credits</span>
+          <div class="card-header-top">
+            <span class="course-code">CSE 415</span>
+            <span class="credit-badge">2 Credits</span>
+          </div>
+          <h3 class="course-title">Research Methodology</h3>
         </div>
-        <div class="card-preview">
-          <span class="preview-item">Core Resources</span>
-          <span class="preview-item">Tips</span>
+        <div class="card-body">
+          <div class="card-preview">
+            <span class="preview-item">Core Resources</span>
+            <span class="preview-item">Tips</span>
+          </div>
         </div>
       </div>
 
       <!-- GED 411 -->
       <div class="course-card" data-course="ged411">
         <div class="card-header">
-          <span class="course-code">GED 411</span>
-          <span class="course-title">Business Communications</span>
-          <span class="credit-badge">3 Credits</span>
+          <div class="card-header-top">
+            <span class="course-code">GED 411</span>
+            <span class="credit-badge">3 Credits</span>
+          </div>
+          <h3 class="course-title">Business Communications</h3>
         </div>
-        <div class="card-preview">
-          <span class="preview-item">Resources</span>
-          <span class="preview-item">Tips</span>
+        <div class="card-body">
+          <div class="card-preview">
+            <span class="preview-item">Resources</span>
+            <span class="preview-item">Tips</span>
+          </div>
         </div>
       </div>
 
       <!-- CSE 401 -->
       <div class="course-card" data-course="cse401">
         <div class="card-header">
-          <span class="course-code">CSE 401</span>
-          <span class="course-title">Capstone Project (Part-1)</span>
-          <span class="credit-badge">2 Credits</span>
+          <div class="card-header-top">
+            <span class="course-code">CSE 401</span>
+            <span class="credit-badge">2 Credits</span>
+          </div>
+          <h3 class="course-title">Capstone Project (Part-1)</h3>
         </div>
-        <div class="card-preview">
-          <span class="preview-item">Project Planning</span>
-          <span class="preview-item">Tips</span>
+        <div class="card-body">
+          <div class="card-preview">
+            <span class="preview-item">Project Planning</span>
+            <span class="preview-item">Tips</span>
+          </div>
         </div>
       </div>
 
       <!-- CSE 413 -->
       <div class="course-card" data-course="cse413">
         <div class="card-header">
-          <span class="course-code">CSE 413</span>
-          <span class="course-title">Compiler Design</span>
-          <span class="credit-badge">3 Credits</span>
+          <div class="card-header-top">
+            <span class="course-code">CSE 413</span>
+            <span class="credit-badge">3 Credits</span>
+          </div>
+          <h3 class="course-title">Compiler Design</h3>
         </div>
-        <div class="card-preview">
-          <span class="preview-item">Video Courses</span>
-          <span class="preview-item">Books</span>
-          <span class="preview-item">Tips</span>
+        <div class="card-body">
+          <div class="card-preview">
+            <span class="preview-item">Video Courses</span>
+            <span class="preview-item">Books</span>
+            <span class="preview-item">Tips</span>
+          </div>
         </div>
       </div>
 
       <!-- CSE 414 -->
       <div class="course-card" data-course="cse414">
         <div class="card-header">
-          <span class="course-code">CSE 414</span>
-          <span class="course-title">Compiler Design Sessional</span>
-          <span class="credit-badge">1 Credit</span>
+          <div class="card-header-top">
+            <span class="course-code">CSE 414</span>
+            <span class="credit-badge">1 Credit</span>
+          </div>
+          <h3 class="course-title">Compiler Design Sessional</h3>
         </div>
-        <div class="card-preview">
-          <span class="preview-item">Tools & Practice</span>
-          <span class="preview-item">Tips</span>
+        <div class="card-body">
+          <div class="card-preview">
+            <span class="preview-item">Tools & Practice</span>
+            <span class="preview-item">Tips</span>
+          </div>
         </div>
       </div>
     </div>
 
     <footer>
-      Semester 7 — Computer Science & Engineering
+      <p>7th Semester — Computer Science & Engineering</p>
     </footer>
   </div>
 

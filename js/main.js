@@ -1,3 +1,23 @@
+// Theme Toggle
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon = themeToggle.querySelector('.theme-icon');
+const themeText = themeToggle.querySelector('.theme-text');
+
+const savedTheme = localStorage.getItem('theme') || 'dark';
+document.documentElement.setAttribute('data-theme', savedTheme);
+themeIcon.textContent = savedTheme === 'light' ? '☀️' : '🌙';
+themeText.textContent = savedTheme === 'light' ? 'Light' : 'Dark';
+
+themeToggle.addEventListener('click', () => {
+  const currentTheme = document.documentElement.getAttribute('data-theme');
+  const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+  
+  document.documentElement.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+  themeIcon.textContent = newTheme === 'light' ? '☀️' : '🌙';
+  themeText.textContent = newTheme === 'light' ? 'Light' : 'Dark';
+});
+
 const courseData = {
   cse411: {
     code: 'CSE 411',
