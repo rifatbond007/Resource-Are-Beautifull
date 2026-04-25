@@ -35,6 +35,7 @@ const courseData = {
       {
         label: 'Books & Notes',
         items: [
+          { name: 'Bangla ML Suggestion', url: 'https://youtu.be/6DrEg73LsAc?si=dhKFJFRLQbsm2QKJ', icon: '🚀', type: 'Video' },
           { name: 'ISL (Free PDF) — James et al.', url: 'https://www.statlearning.com/', icon: '📖', type: 'Textbook' },
           { name: 'Stanford CS229 Notes', url: 'https://cs229.stanford.edu/notes2022fall/main_notes.pdf', icon: '📄', type: 'PDF' }
         ]
@@ -132,8 +133,8 @@ const courseData = {
       {
         label: 'Video Courses',
         items: [
-          { name: 'Neso Academy', url: 'https://www.youtube.com/playlist?list=PLBlnK6fEyqRjT3oJxFXkgjsBk-UsM0rm7', icon: '▶', type: 'YouTube' },
-          { name: 'Ravindrababu Ravula', url: 'https://www.youtube.com/playlist?list=PL9KE3r8T7evFnknkLGaGUFpHYEBQhENg6', icon: '▶', type: 'YouTube' }
+          { name: 'Farhan bhai', url: 'https://youtube.com/playlist?list=PLgrAmbRAezuhY0io8zkwZ1hZ8ayEgAkyG&si=pnFUgP_SwNJAIIxk', icon: '▶', type: 'YouTube' },
+          { name: 'Random bhai', url: '', icon: '▶', type: 'YouTube' }
         ]
       },
       {
